@@ -24,7 +24,7 @@ import io.github.maxwelsantana.travelsjavaapi.service.TravelService;
 @RestController
 @RequestMapping("/api-travels/travels")
 public class TravelController {
-private static final Logger logger = Logger.getLogger(TravelController.class);
+	private static final Logger logger = Logger.getLogger(TravelController.class);
 	
 	@Autowired
 	private TravelService travelService;
