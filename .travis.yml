@@ -9,5 +9,10 @@ git:
 
 script: "mvn clean install -Dmaven.javadoc.skip=true -B -V"
 
+before_install:
+  - chmod +x mvnw
+
 after_success:
   - mvn clean integration-test
+  
+ 
