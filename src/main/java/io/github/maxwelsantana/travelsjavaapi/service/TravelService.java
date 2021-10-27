@@ -72,8 +72,8 @@ public class TravelService {
 		String type = (String) jsonTravel.get("type");
 		travel.setOrderNumber(orderNumber != null ? orderNumber : travel.getOrderNumber());
 		travel.setAmount(jsonTravel.get("amount") != null ? parseAmount(jsonTravel) : travel.getAmount());
-		travel.setStartDate(jsonTravel.get("initialDate") != null ? parseStartDate(jsonTravel) : travel.getStartDate());
-		travel.setEndDate(jsonTravel.get("finalDate") != null ? parseEndDate(jsonTravel) : travel.getEndDate());
+		travel.setStartDate(jsonTravel.get("startDate") != null ? parseStartDate(jsonTravel) : travel.getStartDate());
+		travel.setEndDate(jsonTravel.get("endDate") != null ? parseEndDate(jsonTravel) : travel.getEndDate());
 		travel.setType(type != null ? TravelTypeEnum.getEnum(type) : travel.getType());
 	}
 
